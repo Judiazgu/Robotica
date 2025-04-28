@@ -133,3 +133,4 @@ graph TD
 
 ```
 ## Video Explicativo
+https://youtu.be/O5baownskIE
