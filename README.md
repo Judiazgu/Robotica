@@ -76,15 +76,15 @@ Inicialmente se planteó realizar todas las trayectorias de las letras únicamen
 
 ---
 
-## Letras implementadas
+## Desicion de diseno de las letras
 
-- **Letra J**: Línea vertical y arco a la izquierda en la base.
-- **Letra D**: Línea recta y arco semicircular derecho.
-- **Letra G**: Arco izquierdo, línea vertical y línea horizontal final.
-- **Letra C**: Arco en sentido antihorario.
-- **Letra F**: Línea vertical con dos líneas horizontales.
-- **Letra M**: Línea vertical, dos diagonales y otra línea vertical.
-- **Letra B**: Línea vertical con dos arcos cerrando los bucles.
+- **Letra J**: Línea vertical por medio del servicio de teletransporte relativo y arco a la izquierda en la base por medio de movimientos linerares y angulares paralelos.
+- **Letra D**: Línea recta vertical hacia abajo por medio del servicio de teletransporte relativo y arco semicircular derecho por medio de movimientos linerares y angulares paralelos.
+- **Letra G**: Arco izquierdo por medio de movimientos linerares y angulares paralelos, línea vertical y línea horizontal final usando el servicio de teletransporte relativo.
+- **Letra C**: Arco en sentido antihorario por medio de movimientos linerares y angulares paralelos.
+- **Letra F**: Línea vertical con dos líneas horizontales utilizando en todas las lineas rectas el servicio de teletransporte relativo.
+- **Letra M**: Línea vertical, dos diagonales y otra línea vertical utilizando el teletransporte relativo en cada una de estas.
+- **Letra B**: Línea vertical usando el teletransporte relativo con dos arcos cerrando los bucles utilizando movimientos lineares y angulares paralelamente.
 
 ---
 
