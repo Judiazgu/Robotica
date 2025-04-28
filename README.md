@@ -14,7 +14,7 @@
 
 
 <h4>Juan Jose Diaz Guerrero<br>
-    Cristian Fabian Martinez</h4>
+    Cristian Fabian Martinez Bohorquez</h4>
 
 </div>
 
