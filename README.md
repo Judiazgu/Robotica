@@ -95,13 +95,13 @@ graph TD
     Start(["Start"]) -->|key is pressed? Yes| Decision1{"up?"}
     Start -->|No| Start
 
-    Decision1 -->|Yes| Action_up["Perform up action"]
+    Decision1 -->|Yes| Action_up["Up move action"]
     Decision1 -->|No| Decision2{"down?"}
-    Decision2 -->|Yes| Action_down["Perform down action"]
+    Decision2 -->|Yes| Action_down["Down move action"]
     Decision2 -->|No| Decision3{"right?"}
-    Decision3 -->|Yes| Action_right["Perform right action"]
+    Decision3 -->|Yes| Action_right["Perform right angle move action"]
     Decision3 -->|No| Decision4{"left?"}
-    Decision4 -->|Yes| Action_left["Perform left action"]
+    Decision4 -->|Yes| Action_left["Perform left  angle move action"]
     Decision4 -->|No| Decision5{"J?"}
 
     Decision5 -->|Yes| Prepare_J["Prepare for J: (x,y) = 5,5, angle = π/2"] --> Draw_J["Draw J"]
