@@ -88,9 +88,48 @@ Inicialmente se planteó realizar todas las trayectorias de las letras únicamen
 
 ---
 
-## Cómo ejecutar
+## Diagrama de Flujo
 
-1. Abre una terminal y ejecuta el simulador turtlesim:
+```mermaid
+graph TD
+    Start(["Start"]) -->|key is pressed? Yes| Decision1{"up?"}
+    Start -->|No| Start
 
-```bash
-ros2 run turtlesim turtlesim_node
+    Decision1 -->|Yes| Action_up["Perform up action"]
+    Decision1 -->|No| Decision2{"down?"}
+    Decision2 -->|Yes| Action_down["Perform down action"]
+    Decision2 -->|No| Decision3{"right?"}
+    Decision3 -->|Yes| Action_right["Perform right action"]
+    Decision3 -->|No| Decision4{"left?"}
+    Decision4 -->|Yes| Action_left["Perform left action"]
+    Decision4 -->|No| Decision5{"J?"}
+
+    Decision5 -->|Yes| Prepare_J["Prepare for J: (x,y) = 5,5, angle = π/2"] --> Draw_J["Draw J"]
+    Decision5 -->|No| Decision6{"D?"}
+    Decision6 -->|Yes| Prepare_D["Prepare for D: (x,y) = 5,5, angle = π/2"] --> Draw_D["Draw D"]
+    Decision6 -->|No| Decision7{"G?"}
+    Decision7 -->|Yes| Prepare_G["Prepare for G: (x,y) = 6,5, angle = π"] --> Draw_G["Draw G"]
+    Decision7 -->|No| Decision8{"C?"}
+    Decision8 -->|Yes| Prepare_C["Prepare for C: (x,y) = 6,7.5, angle = 0"] --> Draw_C["Draw C"]
+    Decision8 -->|No| Decision9{"F?"}
+    Decision9 -->|Yes| Prepare_F["Prepare for F: (x,y) = 5,5, angle = π/2"] --> Draw_F["Draw F"]
+    Decision9 -->|No| Decision10{"M?"}
+    Decision10 -->|Yes| Prepare_M["Prepare for M: (x,y) = 4.5, angle = π/2"] --> Draw_M["Draw M"]
+    Decision10 -->|No| Decision11{"B?"}
+    Decision11 -->|Yes| Prepare_B["Prepare for B: (x,y) = 5,3, angle = π/2"] --> Draw_B["Draw B"]
+    Decision11 -->|No| End(["End"])
+
+    Action_up --> End
+    Action_down --> End
+    Action_right --> End
+    Action_left --> End
+    Draw_J --> End
+    Draw_D --> End
+    Draw_G --> End
+    Draw_C --> End
+    Draw_F --> End
+    Draw_M --> End
+    Draw_B --> End 
+
+
+
